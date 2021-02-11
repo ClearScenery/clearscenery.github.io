@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack配置简单入门 | 个人笔记</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="description" content="人生天地间，忽如远行客">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.36fffe06.css" as="style"><link rel="preload" href="/assets/js/app.4afe1630.js" as="script"><link rel="preload" href="/assets/js/3.38043cf1.js" as="script"><link rel="preload" href="/assets/js/1.02653bea.js" as="script"><link rel="preload" href="/assets/js/8.1bae4d00.js" as="script"><link rel="prefetch" href="/assets/js/10.e641c97b.js"><link rel="prefetch" href="/assets/js/11.0657efbc.js"><link rel="prefetch" href="/assets/js/12.fe199a2f.js"><link rel="prefetch" href="/assets/js/13.52c388c5.js"><link rel="prefetch" href="/assets/js/14.bd794fec.js"><link rel="prefetch" href="/assets/js/15.91a70777.js"><link rel="prefetch" href="/assets/js/16.ec7b0505.js"><link rel="prefetch" href="/assets/js/17.f4e004b0.js"><link rel="prefetch" href="/assets/js/18.b31133ef.js"><link rel="prefetch" href="/assets/js/19.a60bb04e.js"><link rel="prefetch" href="/assets/js/20.ea093a86.js"><link rel="prefetch" href="/assets/js/4.06778c46.js"><link rel="prefetch" href="/assets/js/5.135252c5.js"><link rel="prefetch" href="/assets/js/6.7b6cb5bd.js"><link rel="prefetch" href="/assets/js/7.60be83da.js"><link rel="prefetch" href="/assets/js/9.b46cb05f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.36fffe06.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-dad8a512><div data-v-dad8a512><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-dad8a512 data-v-dad8a512><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-dad8a512 data-v-dad8a512><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>个人笔记</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>ClearScenery</span>
+            
+          <span data-v-64685f0e>2018 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-dad8a512><header class="navbar" data-v-dad8a512><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.jpg" alt="个人笔记" class="logo"> <span class="site-name">个人笔记</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/frontend/" class="nav-link"><i class="iconfont undefined"></i>
+  frontend
+</a></li><li class="dropdown-item"><!----> <a href="/categories/metrics/" class="nav-link"><i class="iconfont undefined"></i>
+  metrics
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-date"></i>
+  关于
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/ClearScenery/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-dad8a512></div> <aside class="sidebar" data-v-dad8a512><div class="personal-info-wrapper" data-v-ca798c94 data-v-dad8a512><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    ClearScenery
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>9</h3> <h6 data-v-ca798c94>文章</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>3</h3> <h6 data-v-ca798c94>标签</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/frontend/" class="nav-link"><i class="iconfont undefined"></i>
+  frontend
+</a></li><li class="dropdown-item"><!----> <a href="/categories/metrics/" class="nav-link"><i class="iconfont undefined"></i>
+  metrics
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-date"></i>
+  关于
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/ClearScenery/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-dad8a512><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>webpack配置简单入门</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>ClearScenery</span>
+            
+          <span data-v-64685f0e>2018 - </span>
+          2021
+        </a></span></div></div> <div data-v-dad8a512><main class="page"><div class="page-title" style="display:none;"><h1>webpack配置简单入门</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>ClearScenery</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2020-11-13</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/fe/webpack/webpack-config.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>webpack</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><p>本章主要记录了webpack简单的配置入门，使用自定义配置来打包模块。</p> <h1 id="webpack配置简单入门"><a href="#webpack配置简单入门" class="header-anchor">#</a> webpack配置简单入门</h1> <h1 id="一、默认配置与约定文件"><a href="#一、默认配置与约定文件" class="header-anchor">#</a> 一、默认配置与约定文件</h1> <blockquote><p>webpack默认有一个配置文件</p></blockquote> <p>上一章我们简单的使用了webapck对js文件进行打包，我们知道了webpack本质上是一个模块打包器。它会将模块化引入的模块全部打包到默认配置的文件中，也就是dist/main.js文件。</p> <h3 id="_1、配置"><a href="#_1、配置" class="header-anchor">#</a> 1、配置</h3> <p>webpack默认约定一个配置文件叫做：webpack.config.js，现在我们修改下项目结构如下：</p> <p><img src="/assets/img/webpack-instroction-1.c3a3e514.png" alt="image.png"></p> <p>通过上图，可以看到，我们将自己开发用到的源代码文件全部移入到新建的src目录下，并且在项目根目录下，新建了一个webpack配置文件为webpack.config.js文件。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// entry: './src/index.js',</span>
+    entry<span class="token operator">:</span><span class="token punctuation">{</span>
+        main<span class="token operator">:</span><span class="token string">'./src/index.js'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    output<span class="token operator">:</span> <span class="token punctuation">{</span>
+        filename<span class="token operator">:</span> <span class="token string">'bundle.js'</span><span class="token punctuation">,</span>
+        path<span class="token operator">:</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">'bundle'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后我们配置一下npm scripts如下：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack-learn&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack-learn&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     <span class="token string">&quot;bundle&quot;</span><span class="token operator">:</span><span class="token string">&quot;webpack&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ClearScenery&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MIT&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;webpack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.41.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack-cli&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.3.9&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这里我们只是配置了一个 <strong>&quot;bundle&quot;:&quot;webpack&quot; <strong>脚本，当我们运行</strong>npm run bundle</strong>时，会自动调用webpack命令，webpack首先会在项目中查找webpack.config.js，如果找到就使用其中的配置，如果没找到就是用默认配置。
+所以这里会按照我们配置文件中定义的入口文件来进行模块查找并打包到项目中bundle目录下，产生一个bundle.js文件。</p> <p>说明：当配置npm script时，我们运行npm run bundle使用的webpack和npx webpack效果是一样的，都会首先在当前工程node_modules的bin目录下查找该命令，不同的是，如果没有此命令，npm run bundle会提示错误，而npx会从中央仓库下载。</p> <h3 id="_2、日志输出说明"><a href="#_2、日志输出说明" class="header-anchor">#</a> 2、日志输出说明</h3> <p>当我们运行npm run bundle，控制台打印出如下日志，接下来我们讲讲打印出的信息都是什么意思：</p> <p><img src="/assets/img/webpack-instroction-2.566a6626.png" alt="image.png"></p> <ul><li>hash：本次打包的哈希值</li> <li>version：本次打包使用的webapck版本</li> <li>time：本次打包耗时</li> <li>build at：打包时间</li></ul> <table><thead><tr><th>asset</th> <th>size</th> <th>chunks</th> <th>chunk names</th></tr></thead> <tbody><tr><td>打包出的文件</td> <td>打包出的文件大小</td> <td>每一个文件的ID</td> <td>每一个文件的名字</td></tr></tbody></table> <ul><li>entrypoint：入口文件</li></ul> <p>同时，我们可以看到上图中的下面下方有一个警告，提示webapck没有配置mode。这个mode的意思是配置webpack打包的模式，有两个选项，一个是development，一个是production。见名知意，可以知道，当开发模式下，我们可以配置成development，生成环境下可以配置成production，接下来我们可以看下两者的区别。</p> <p>接下来我们修改webapck文件，在其中添加mode为开发模式：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    mode<span class="token operator">:</span><span class="token string">'development'</span><span class="token punctuation">,</span> <span class="token comment">//mode为开发模式</span>
+    entry<span class="token operator">:</span><span class="token punctuation">{</span>
+        main<span class="token operator">:</span><span class="token string">'./src/index.js'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    output<span class="token operator">:</span> <span class="token punctuation">{</span>
+        filename<span class="token operator">:</span> <span class="token string">'bundle.js'</span><span class="token punctuation">,</span>
+        path<span class="token operator">:</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">'bundle'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后我们运行npm run bundle，这次我们会发现没有黄色的警告了。我们打开打包出的bundle.js，会发现代码大致长这样：</p> <p><img src="/assets/img/webpack-instroction-3.59412fca.png" alt="image.png"></p> <p>然后我们修改mode为生产模式：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    mode<span class="token operator">:</span><span class="token string">'production'</span><span class="token punctuation">,</span> <span class="token comment">//mode为生产模式</span>
+    entry<span class="token operator">:</span><span class="token punctuation">{</span>
+        main<span class="token operator">:</span><span class="token string">'./src/index.js'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    output<span class="token operator">:</span> <span class="token punctuation">{</span>
+        filename<span class="token operator">:</span> <span class="token string">'bundle.js'</span><span class="token punctuation">,</span>
+        path<span class="token operator">:</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">'bundle'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后再次运行npm run bundle重新打包，也没有警告，我们再次打开bundle.js，会发现代码大致如下：</p> <p><img src="https://cdn.nlark.com/yuque/0/2019/png/335120/1570117110095-45e3e84d-ae88-4c7b-b8ec-a49e49f04704.png#align=left&amp;display=inline&amp;height=354&amp;name=image.png&amp;originHeight=354&amp;originWidth=662&amp;size=59755&amp;status=done&amp;width=662" alt="image.png"></p> <p>比对两次产生的bundle.js可以发现，开发模式下，打包出的文件是没有进行压缩的，这样我们可以方便进行调试，而生成环境下，是会进行压缩，从而可以减少包体积，节省带宽等。</p> <h2 id="二、配置文件概述与loader介绍"><a href="#二、配置文件概述与loader介绍" class="header-anchor">#</a> 二、配置文件概述与loader介绍</h2> <h3 id="_1、配置文件概述"><a href="#_1、配置文件概述" class="header-anchor">#</a> 1、配置文件概述</h3> <p>下面是一个webpack配置文件，接下我们简单介绍下其中的内容：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    mode<span class="token operator">:</span><span class="token string">'production'</span><span class="token punctuation">,</span>
+    entry<span class="token operator">:</span><span class="token punctuation">{</span>
+        main<span class="token operator">:</span><span class="token string">'./src/index.js'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    module<span class="token operator">:</span> <span class="token punctuation">{</span>
+        rules<span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex">/\.jpg/</span> <span class="token punctuation">,</span>
+                use<span class="token operator">:</span><span class="token punctuation">{</span>
+                    loader<span class="token operator">:</span><span class="token string">'file-loader'</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    output<span class="token operator">:</span> <span class="token punctuation">{</span>
+        filename<span class="token operator">:</span> <span class="token string">'bundle.js'</span><span class="token punctuation">,</span>
+        path<span class="token operator">:</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">'bundle'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>require('path')：引入node核心path模块，用来处理系统路径</li> <li>module.exports = {}，Commonjs模块暴露规范写法，webpack配置文件走的也是Commonjs模块话规范</li> <li>mode：配置webpack的mode为production，生产模式</li> <li>entry：配置webpack的入口文件</li> <li>module：用来配置webpack的loader等，此处，配置了一条规则用来处理.jpg文件，使用了file-loader</li> <li>output：打包输出的文件，此处配置的文件名字为bundle.js，path配置为当前目录下的bundle目录下</li></ul> <h3 id="_2、loader简单使用"><a href="#_2、loader简单使用" class="header-anchor">#</a> 2、loader简单使用</h3> <p>webpack默认情况下只是一个js模块打包器，当我们需要对非js文件打包时，我们就需要loader来处理这些文件，上面的配置中，我们配置了一个file-loader来处理jpg图片打包。在我们配置了file-loader之后，我们还不能直接进行打包，必须先安装file-loader，webpack才能使用它。</p> <p>通过 <code>npm install file-loader -D</code> 来安装file-loader。</p> <p>同时，我们修改index.js文件如下：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Header <span class="token keyword">from</span> <span class="token string">'./header.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Sidebar <span class="token keyword">from</span> <span class="token string">'./sidebar.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Content <span class="token keyword">from</span> <span class="token string">'./content.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> avater <span class="token keyword">from</span> <span class="token string">'./logo.jpg'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> img <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Image</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+img<span class="token punctuation">.</span>src<span class="token operator">=</span>avater<span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> root <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+root<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>img<span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>avater<span class="token punctuation">)</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Header</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">new</span> <span class="token class-name">Sidebar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">new</span> <span class="token class-name">Content</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>接下里我们运行下npm run bundle，打印的日志如下：</p> <p><img src="https://cdn.nlark.com/yuque/0/2019/png/335120/1570119565636-6ee3f7f2-2ba5-4d4f-b85d-90289f95f3ea.png#align=left&amp;display=inline&amp;height=375&amp;name=image.png&amp;originHeight=375&amp;originWidth=646&amp;size=71711&amp;status=done&amp;width=646" alt="image.png"></p> <p>通过日志我们可以看到，logo.jpg已经被打包了，这时我们可以看到bundle目录下产生了一个jpg的文件。</p> <p><img src="https://cdn.nlark.com/yuque/0/2019/png/335120/1570119727969-4ce6f8ef-274c-404f-8246-1528f6f13287.png#align=left&amp;display=inline&amp;height=312&amp;name=image.png&amp;originHeight=312&amp;originWidth=321&amp;size=22643&amp;status=done&amp;width=321" alt="image.png"></p> <p>此时，我们打开index.html，发现成功的渲染了一张图片：</p> <p><img src="https://cdn.nlark.com/yuque/0/2019/png/335120/1570119873890-893de625-b3ea-4930-aeaf-64186c6c4234.png#align=left&amp;display=inline&amp;height=424&amp;name=image.png&amp;originHeight=424&amp;originWidth=651&amp;size=111254&amp;status=done&amp;width=651" alt="image.png"></p> <p>通过此处，可以联想到vue中也是通过vue-loader来打包.vue等文件的。</p> <p>本章简单的概述了webpack的配置文件，已经简单的介绍了loader的概念，接下了我会通过使用不同的loader来加深对loader的理解。</p></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.4afe1630.js" defer></script><script src="/assets/js/3.38043cf1.js" defer></script><script src="/assets/js/1.02653bea.js" defer></script><script src="/assets/js/8.1bae4d00.js" defer></script>
+  </body>
+</html>
