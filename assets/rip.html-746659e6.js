@@ -1,0 +1,1 @@
+import{_ as t,o,c as _,b as e}from"./app-d8328856.js";const c={},s=e("p",null,"1、查看能否加表 可以加表=可以传递 不能加表=不能传递",-1),n=e("p",null,"2、传递给相邻的设备",-1),r=[s,n];function l(a,i){return o(),_("div",null,r)}const p=t(c,[["render",l],["__file","rip.html.vue"]]);export{p as default};

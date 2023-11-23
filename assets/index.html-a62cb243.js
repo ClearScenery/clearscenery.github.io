@@ -1,0 +1,2 @@
+import{_ as e,o as t,c as a,a as i}from"./app-d8328856.js";const n={},d=i(`<h2 id="tip" tabindex="-1"><a class="header-anchor" href="#tip" aria-hidden="true">#</a> Tip</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>道阻且长，行则将至
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),s=[d];function c(r,o){return t(),a("div",null,s)}const _=e(n,[["render",c],["__file","index.html.vue"]]);export{_ as default};
